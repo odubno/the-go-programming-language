@@ -2,7 +2,7 @@
 
 This is my sand box for learning and experimenting with Go. Each chapter directory is from `The Go Programming Language` by Alan A. A. Donovan and Brian W. Kerninghan. Below, you'll find some notes that I wrote down as I went through each chapter. 
 
-The `failing_forward` directory contains work from tutorials made by Mike Van Sickle [Failing Forward - YouTube](https://www.youtube.com/watch?v=OSPNUKoN81o&list=PLq9Ra239pNZC0MgMN4j6ZiPHv_c0UPnBX). It goes over the workflow using Go and its tools. Each subdirectory has a `main.go`; there you'll find all of my notes.
+The `failing_forward` directory contains work from tutorials made by Mike Van Sickle [Failing Forward - YouTube](https://www.youtube.com/watch?v=OSPNUKoN81o&list=PLq9Ra239pNZC0MgMN4j6ZiPHv_c0UPnBX). It goes over the workflow using Go and its tools. Each subdirectory has a `main.go`; there you'll find my code and notes.
 
 ## chapter 1
 
