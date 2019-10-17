@@ -1,5 +1,9 @@
-// $go build fetchall.go
-// $./fetchall https://golang.org http://gopl.io https://godoc.org
+/*
+Fetch URLs concurrently using goroutines and channels
+
+go build 02_fetchall.go
+./02_fetchall https://golang.org http://gopl.io https://godoc.org
+*/
 package main
 
 import (
@@ -12,10 +16,13 @@ import (
 )
 
 func main() {
+	// a goroutine is a concurrent function execution
+	// a channel allows one goroutine to pass values to another goroutine
 	start := time.Now()
 
 	// creates a channel of strings using make
 	ch := make(chan string)
+
 	urls := os.Args[1:]
 	for _, url := range urls {
 		go fetch(url, ch) // start a goroutine
@@ -34,7 +41,7 @@ func fetch(url string, ch chan<- string) {
 		return
 	}
 
-	// grab the number of bytes
+	// Copy returns the byte count, along with any error that occurred
 	nbytes, err := io.Copy(ioutil.Discard, resp.Body)
 
 	resp.Body.Close() // don't leak resources

@@ -1,3 +1,8 @@
+/*
+go build 01_fetch
+./01_fetch http://gopl.io
+*/
+
 package main
 
 import (
@@ -8,12 +13,19 @@ import (
 )
 
 func main() {
-	// os.Args is a slice.
-	// it contains the file name as the first index and command line arguments that follow it.
+	// os.Args is a slice of command line arguments
+	// the first item is the name of the file; we skip the first item
 	for _, url := range os.Args[1:] {
-		resp, _ := http.Get(url)
-		b, _ := ioutil.ReadAll(resp.Body)
-		resp.Body.Close()
+		resp, err := http.Get(url)
+		if err != nil {
+			fmt.Fprintf(os.Stderr, "fetch: %v\n", err)
+			os.Exit(1)
+		}
+		b, err := ioutil.ReadAll(resp.Body)
+		defer resp.Body.Close()
+		if err != nil {
+			fmt.Fprintf(os.Stderr, "fetch: reading %s: %v\n", url, err)
+		}
 		fmt.Printf("%s", b)
 	}
 }
