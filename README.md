@@ -1,10 +1,13 @@
 # the-go-programming-language
 
-This is my sand box for learning and experimenting with Go. Each chapter directory is from `The Go Programming Language` by Alan A. A. Donovan and Brian W. Kerninghan. Below, you'll find some notes that I wrote down as I went through each chapter. 
+This is my sand box for learning and experimenting with Go. Here, I document several sources that I use to get familiar with Go.
 
-The `failing_forward` directory contains work from tutorials made by Mike Van Sickle [Failing Forward - YouTube](https://www.youtube.com/watch?v=OSPNUKoN81o&list=PLq9Ra239pNZC0MgMN4j6ZiPHv_c0UPnBX). It goes over the workflow using Go and its tools. Each subdirectory has a `main.go`; there you'll find my code and notes.
+- `go_programming_book/` directory contains notes and exercises found in `The Go Programming Language` by Alan A. A. Donovan and Brian W. Kerninghan. 
 
-The `exercism` directory contains work from excercises found on [exercism.io](https://exercism.io/profiles/odubno).
+- `failing_forward/` contains work from tutorials made by Mike Van Sickle [Failing Forward - YouTube](https://www.youtube.com/watch?v=OSPNUKoN81o&list=PLq9Ra239pNZC0MgMN4j6ZiPHv_c0UPnBX). It goes over the workflow using Go and its tools. Each subdirectory has a `main.go`; there you'll find my code and notes.
+
+- `exercism/` contains work from excercises found on [exercism.io](https://exercism.io/profiles/odubno).
+
 
 ## chapter 1
 
