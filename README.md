@@ -1,4 +1,4 @@
-# the-go-programming-language
+# The Go Programming Language
 
 This is my sand box for learning and experimenting with Go. Here, I document several sources that I use to get familiar with Go.
 
