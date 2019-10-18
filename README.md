@@ -4,6 +4,8 @@ This is my sand box for learning and experimenting with Go. Each chapter directo
 
 The `failing_forward` directory contains work from tutorials made by Mike Van Sickle [Failing Forward - YouTube](https://www.youtube.com/watch?v=OSPNUKoN81o&list=PLq9Ra239pNZC0MgMN4j6ZiPHv_c0UPnBX). It goes over the workflow using Go and its tools. Each subdirectory has a `main.go`; there you'll find my code and notes.
 
+The `exercism` directory contains work from excercises found on [exercism.io](https://exercism.io/profiles/odubno).
+
 ## chapter 1
 
 Go is a compiled language. 
@@ -50,3 +52,7 @@ for initialization; condition; post {
 
 #### Predeclared Integers
 - uint, int, uintptr
+
+## chapter 2
+
+Going into the basic structure 
